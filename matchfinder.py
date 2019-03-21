@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 def findMatch (itemsList, userInput):
     isValid = False
     counter = 0
@@ -30,25 +26,3 @@ def findMatch (itemsList, userInput):
         counter+=1
     
     return possibilities
-    
-
-
-
-coffeeTypes = ["Espresso", "Cappuccino", "Americano", "Macchiato", "Mocha", "Filter", "Turkish"]
-
-userInput = (str(input("Enter input: "))).title()
-
-result = findMatch(coffeeTypes, userInput)
-    
-if isinstance(result, int) :
-    print("Picked: " + coffeeTypes[result])
-elif len(result) > 0 :
-    print("Did you mean one of below: ")
-    for p in result:
-        print(coffeeTypes[p])
-else :
-    print("No such choice.")
-
-    
-    
-
