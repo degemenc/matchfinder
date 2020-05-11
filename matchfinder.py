@@ -21,7 +21,7 @@ def findMatch (itemsList, userInput):
                 letterMatch += 1
                 
         if letterMatch >= 3 :
-            possibilities.append(counter)
+            possibilities.append(item)
             
         counter+=1
     
